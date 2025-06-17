@@ -65,11 +65,12 @@
             var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
             var container = document.getElementById("videoContainer");
             if (isMobile) {
-                container.innerHTML = '<div class="absolute inset-0 w-full h-full overflow-hidden">' +
-                                    '<iframe class="w-full h-full absolute inset-0 opacity-50 pointer-events-none" ' +
-                                    'src="https://www.youtube.com/embed/LUPL2S3O-2Q?autoplay=1&mute=1&controls=0&rel=0&showinfo=0&loop=1&playlist=LUPL2S3O-2Q" ' +
-                                    'frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>' +
-                                    '</div>'
+                container.innerHTML = '<div class="absolute top-0 left-0 w-full h-full overflow-hidden">' +
+                                      '<div class="relative w-full h-full" style="padding-top: 177.78%;">' +
+                                      '<iframe class="absolute top-0 left-0 w-full h-full pointer-events-none" ' +
+                                      'src="https://www.youtube.com/embed/ZOcLqntm8cE?autoplay=1&mute=1&controls=0&rel=0&showinfo=0&loop=1&playlist=ZOcLqntm8cE" ' +
+                                      'frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>' +
+                                      '</div>' 
                 
                 
             } else {
